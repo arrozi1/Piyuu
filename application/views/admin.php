@@ -3,12 +3,12 @@
 
 		<div class="mt-1">
 			<ol class="breadcrumb">
-			  	<li class="breadcrumb-item active text-primary d-flex">ShoutOut Admin Page</li>
+			  	<li class="breadcrumb-item active text-primary d-flex">ini admin</li>
 			</ol>
 		</div>
 		<div class="card">
 			<div class="card-header font-weight-bold">User List
-					<button style="float:right;" class="btn btn-primary rounded-pill shadow" onclick="location.href='<? echo base_url();?>logout'">Logout</button>
+					<button style="float:right;" class="btn btn-light rounded-pill shadow" onclick="location.href='<?= base_url();?>logout'">Logout</button>
 			</div>
 
 			<div class="card-body">
@@ -23,14 +23,14 @@
 							</tr>
 						</thead>
 						<tbody>
-							<? foreach ($users as $key => $user) {?>
+							<?php foreach ($users as $key => $user) {?>
 								<tr>
-									<td><img src="<? echo base_url().'uploads/'.$user['image'];?>" widht="50" height="50" ></td>
-									<td><? echo $user['name'];?></td>
-									<td><? echo $user['email'];?></td>
-									<td><? echo $user['Address'];?></td>
+									<td><img src="<?php base_url().'uploads/'.$user['image'];?>" widht="50" height="50" ></td>
+									<td><?= $user['name'];?></td>
+									<td><?= $user['email'];?></td>
+									<td><?= $user['Address'];?></td>
 								</tr>
-							<? } ?>
+							<?php } ?>
 							
 						</tbody>
 					</table>

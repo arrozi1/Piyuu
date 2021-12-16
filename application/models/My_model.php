@@ -317,8 +317,9 @@ class My_model extends CI_Model {
 
         $this->db->where('id',$id);
         $query = $this->db->delete('post');
+        
         return $this->db->affected_rows();
-    }
+    }    
 
     public function insert_claps($user){
         $claps = array(

@@ -4,11 +4,11 @@
 	box-sizing: border-box;
 }
 body {
-	background-image: url("../../images/logo.png");
+	background-image: url("../../images/logoa.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
-	background-color: rgb(236, 62, 155);
+	background-color: hsla(50, 33%, 25%, .75);
 }
 main {
 	position: relative;
@@ -71,7 +71,7 @@ button.select {
 	padding: 10px;
 	border-radius: 10px;
 	color: white;
-	background-color: #ff1493;
+	background-color: #1373f0;
 	border: 2px solid gray;
 	font-size: 10px;
 	font-weight: bold;
@@ -79,9 +79,9 @@ button.select {
 	cursor: pointer;
 }
 button.select:hover {
-	color: #ff1493;
+	color: #1373f0;
 	background-color: white;
-	border: 2px solid #ff1493;
+	border: 2px solid #146ca7;
 }
 h2,
 h3 {
@@ -111,24 +111,24 @@ h3 {
 	cursor: pointer;
 }
 .signup {
-	border: 2px solid #ec3e9b;
-	color: #ec3e9b;
+	border: 2px solid #1373f0;
+	color: #1373f0;
 }
 .login {
 	border: 2px solid white;
 	color: white;
-	background-color: #ec3e9b;
+	background-color: #1373f0;
 	transition: all 1s;
 }
 .signup:hover {
 	border: 2px solid white;
 	color: white;
-	background-color: #ec3e9b;
+	background-color: #1373f0;
 	transition: all 1s;
 }
 .login:hover {
-	border: 2px solid #ec3e9b;
-	color: #ec3e9b;
+	border: 2px solid #1373f0;
+	color: #1373f0;
 	background-color: white;
 }
 footer {
@@ -157,7 +157,7 @@ footer {
 	color: gray;
 }
 .links-1 li a:hover {
-	color: #ec3e9b;
+	color: #1373f0;
 }
 .fa-search,
 .fa-comments,

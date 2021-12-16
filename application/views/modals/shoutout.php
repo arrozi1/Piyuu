@@ -10,11 +10,11 @@
             </div>
             <div class="modal-body">
                 <div class="input-text">
-                    <form action="<? echo base_url();?>post-submit" method="POST" enctype="multipart/form-data">
+                    <form action="<?= base_url();?>post-submit" method="POST" enctype="multipart/form-data">
                         <div class="form-group">
-                            <img class="logo-img rounded-circle border" src="<? echo base_url().'uploads/'.$profile['image'];?>" width="60" height="50"/>
+                            <img class="logo-img rounded-circle border" src="<?= base_url().'uploads/'.$profile['image'];?>" width="60" height="50"/>
                             <textarea placeholder="Shout here?" name='post' row="0" id="content" class="modal-shout"></textarea>
-                            <input type="text" value="<? echo $_SERVER['PATH_INFO']; ?>" name="identifier" hidden=""/>
+                            <input type="text" value="<?= $_SERVER['PATH_INFO']; ?>" name="identifier" hidden=""/>
                         </div>
                         <div style="height:35px; width:35px;" class="mb-3">
                                 <label class="pl-2 ml-5">
@@ -26,7 +26,7 @@
             <div>
             </div>
             <div class="modal-footer">
-                <button type="submit" class="btn btn-info">Shout</button>
+                <button type="submit" class="btn btn-info">Piyuu</button>
             </div>
             </form>
         </div>

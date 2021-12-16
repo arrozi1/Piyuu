@@ -10,7 +10,11 @@ class Shout extends CI_Controller {
         $this->load->view('templates/footer');
     }
 
-    
+ 
+////KOREKSI BAGIAN INI
+
+/////// BAWAH BAGUS
+
 	public function about(){
 		$this->load->view('templates/header-about');
         $this->load->view('about');
@@ -539,6 +543,8 @@ class Shout extends CI_Controller {
         }
     }
 
+    
+
     public function claps($id){
         $validator = array('success' => false, 'messages' => array());
 
@@ -681,6 +687,12 @@ class Shout extends CI_Controller {
 
         echo json_encode($validation);
         
+    }
+
+    public function keluar(){
+  
+      
+        return $this->load->view('tampilan_utama');
     }
 
     public function logout(){

@@ -31,3 +31,4 @@ $route['claps/(:num)'] = 'shout/claps/$1';
 $route['comment/(:num)'] = 'shout/comment/$1';
 $route['allpost'] = 'shout/allpost';
 $route['logout'] = 'shout/logout';
+$route['keluar'] = 'shout/keluar';

@@ -1,14 +1,14 @@
 <body>
     <main class="h-100 mt-4">
         <div class="row w-75 m-auto main-card">
-
-            <div class="col-md-6 p-0 right-card">
+        <div class="col-lg-5" style="float:none;margin:auto;">
+            
                 <div class="card bg-secondary">
                     <form action="" method="POST">
                         <div class="card-body card-main">
                                 <div class="form-group text-center">
-                                <a href="<? echo base_url();?>"><img src="<? echo base_url();?>images/logo.png" class="logo mb-2" width="50" height="40"></a>
-                                    <h3 class="text-primary font-weight-bolder">Join ShoutOut Today</h3>                        
+                                <a href="<?= base_url();?>"><img src="<?= base_url();?>images/logoa.png" class="logo mb-2" width="50" height="40"></a>
+                                    <h3 class="text-primary font-weight-bolder">Join Piyuu Today</h3>                        
                                 </div>
                                 <div class="form-group">
                                     <label class="col-form-label" for="inputDefault">Username</label>
@@ -31,16 +31,13 @@
                                     <button class="btn btn-primary rounded-pill btn-lg w-75 signup-btn">Get Started</button>
                                 </div>
                                 <div class="text-center">
-                                <small class="text-muted font-italic">Already have an Account?<a href="<? echo base_url();?>login" class="btn-link"> Login here</a></small>
+                                <small class="text-muted font-italic">Already have an Account?<a href="<?= base_url();?>login" class="btn-link"> Login here</a></small>
                                 </div>
                             </div>
                         </div>
                     </form>
                 </div>
-            <div class="col-md-6 text-center left-card p-0">
-                <div class="h-100 logo-container">
-                    <img class="img img-fluid" src="<? echo base_url();?>images/signup.jpg"/>
-                </div>
+            
             </div>
         </div>
     </main>

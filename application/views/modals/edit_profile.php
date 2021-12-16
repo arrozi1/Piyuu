@@ -9,22 +9,25 @@
                 </button>
             </div>
             <div class="modal-body p-3">
-                    <form action="<? echo base_url();?>edit-profile" method="POST">
+                    <form action="<?= base_url();?>edit-profile" method="POST">
                             <div class="form-group">
                                 <label>Name</label>
-                                <textarea class="form-control" name="name" column="30"><? echo $profile['name'];?></textarea>
+                                <textarea class="form-control" name="name" column="30"><?= $profile['name'];?></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Bio</label>
-                                <textarea class="form-control" name="bio"><? echo $profile['bio'];?></textarea>
+                                <textarea class="form-control" name="bio"><?= $profile['bio'];?></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Location</label>
-                                <textarea class="form-control" name="address"><? echo $profile['address'];?></textarea>
+                                <textarea class="form-control" name="address"><?= $profile['address'];?></textarea>
                             </div>
                             <div class="form-group">
                                 <label>Birthday</label><br> 
-                                <input type="date" class="form-control-sm" name="born-date" value="<? $time = strtotime($profile['birthdate']); echo date("Y-m-d",$time);?>"/>
+                                <input type="date" class="form-control-sm" name="born-date" value="<?php
+								$time = strtotime($profile['birthdate']);
+								echo date("Y-m-d",$time);
+								?>"/>
                             </div>
             </div>
             <div class="modal-footer">
@@ -47,8 +50,8 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img class="mb-1 img img-fluid" src="<? echo base_url().'uploads/'.$profile['image'];?>"/>
-                <form action="<? echo base_url();?>edit-profile" method="POST" enctype="multipart/form-data">
+                <img class="mb-1 img img-fluid" src="<?= base_url().'uploads/'.$profile['image'];?>"/>
+                <form action="<?= base_url();?>edit-profile" method="POST" enctype="multipart/form-data">
                     <input type="file" name="image" class="btn btn-info">
                 
             </div>
@@ -72,8 +75,8 @@
                 </button>
             </div>
             <div class="modal-body text-center">
-                <img class="mb-1 img img-fluid" src="<? echo base_url().'uploads/'.$profile['cover'];?>"/>
-                <form action="<? echo base_url();?>edit-profile" method="POST" enctype="multipart/form-data">
+                <img class="mb-1 img img-fluid" src="<?= base_url().'uploads/'.$profile['cover'];?>"/>
+                <form action="<?= base_url();?>edit-profile" method="POST" enctype="multipart/form-data">
                     <input type="file" name="cover" class="btn btn-info">
             </div>
             <div class="modal-footer">
@@ -98,7 +101,7 @@
                 <form action="" method="POST">
                     <div class="form-group">
                           <label class="col-form-label" for="inputDefault">Username</label>
-                          <input type="text" class="form-control" placeholder="Default input" id="inputDefault1" readonly value="<? echo $this->session->userdata('username');?>">
+                          <input type="text" class="form-control" placeholder="Default input" id="inputDefault1" readonly value="<?= $this->session->userdata('username');?>">
                     </div>
                     <div class="form-group">
                           <label class="col-form-label" for="inputUsername">Enter New Password</label>

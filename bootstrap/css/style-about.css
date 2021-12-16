@@ -5,11 +5,11 @@
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 body {
-	background-image: url("../../images/logo.png");
+	background-image: url("../../images/logoa.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
-	background-color: rgb(236, 62, 155);
+	background-color: rgb(32, 103, 136);
 }
 header {
 	display: flex;

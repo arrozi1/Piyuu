@@ -8,8 +8,8 @@
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #dc3545;
+  --pink: #1373f0;
+  --red: #1373f0;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -17,15 +17,16 @@
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #6c757d;
-  --gray-dark: #343a40;
+  --dark1: #343a40;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
-  --danger: #dc3545;
+  --danger: #1373f0;
   --light: #f8f9fa;
   --dark: #343a40;
+  --darka: #1c1d1f ;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -506,7 +507,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #1373f0;
   word-break: break-word;
 }
 
@@ -2858,8 +2859,8 @@ fieldset:disabled a.btn {
 
 .btn-outline-danger:hover {
   color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #3599dc;
+  border-color: #3599dc;
 }
 
 .btn-outline-danger:focus, .btn-outline-danger.focus {
@@ -2867,15 +2868,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-danger.disabled, .btn-outline-danger:disabled {
-  color: #dc3545;
+  color: #3599dc;
   background-color: transparent;
 }
 
 .btn-outline-danger:not(:disabled):not(.disabled):active, .btn-outline-danger:not(:disabled):not(.disabled).active,
 .show > .btn-outline-danger.dropdown-toggle {
   color: #fff;
-  background-color: #dc3545;
-  border-color: #dc3545;
+  background-color: #3599dc;
+  border-color: #3599dc;
 }
 
 .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
@@ -6584,8 +6585,19 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: #1c1d1f !important;
 }
+
+.bg-darka {
+  background-color:  #1c1d1f !important;
+}
+
+a.bg-darka:hover, a.bg-darka:focus,
+button.bg-darka:hover,
+button.bg-darka:focus {
+  background-color: #1c1d1f !important;
+}
+
 
 .bg-white {
   background-color: #fff !important;
